@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         以格式markdown复制网页链接
+// @version         0.0.5
 // @namespace    http://tampermonkey.net/
-// @version      2024-10-01
 // @description  try to take over the world!
 // @author       You
 // @match        http://*/*
@@ -31,15 +31,16 @@ function tc(text) {
 
     // b.style.width = '8vh'
     // a.style.margin = '5em auto'
-    // a.style.padding = '2em'
+    b.style.padding = '13px'
     b.style["background-color"] = ' #24f5ff'
     b.style["border-radius"] = ' 0.5em'
-    b.style[" box-shadow"] = ' 2px 3px 7px 2px rgba(0,0,0,0.02);'
+    b.style["box-shadow"] = ' 2px 3px 7px 2px rgba(0,0,0,0.02);'
     b.style.border = "3px solid blue"
 
 
     // 删除
     var x = document.createElement("button")
+    x.style.padding = '10px'
     x.innerText = "x"
 
     // 添加点击删除事件监听器
@@ -63,6 +64,7 @@ function func() {
     a.style.transform = 'translate(-50%, -50%)';
 
     // 装饰
+    a.style.padding = '10px'
     a.style["background-color"] = ' #24f5ff'
     a.style["border-radius"] = '2px'
     a.style.border = "2px solid blue"
