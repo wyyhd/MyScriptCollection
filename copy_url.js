@@ -16,10 +16,10 @@
     // Your code here...
     // 弹窗
 function tc(text) {
-    var a = document.createElement("div")
+    var a = document.createElement("mydiv")
 
     // 设置元素的样式为居中
-    a.style.position = 'absolute';
+    a.style.position = 'fixed';
     a.style.top = '50vh'; // 视口高度的50%
     a.style.left = '50vw'; // 视口宽度的50%
     a.style.transform = 'translate(-50%, -50%)';
@@ -54,10 +54,10 @@ function tc(text) {
 
 
 function func() {
-    var a = document.createElement("div")
+    var a = document.createElement("mydiv")
 
     // 设置元素的样式为靠边
-    a.style.position = 'absolute';
+    a.style.position = 'fixed';
     a.style.top = '10vh'; // 视口高度的50%
     a.style.left = '90vw'; // 视口宽度的50%
     a.style.transform = 'translate(-50%, -50%)';
